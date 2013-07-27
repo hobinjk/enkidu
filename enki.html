@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Enkidu - Encryption Mystified</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href='http://fonts.googleapis.com/css?family=Codystar' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="response.css"/>
+  </head>
+  <body>
+    <!-- <div id="container"></div> -->
+    <div id="plain" class="plain dropbox"><p class="prompt">drop normal files or click</p></div>
+    <div id="center-container" class="centered key-entry">
+      <input type="password" id="key-entry-input" placeholder="password">
+      <input type="button" id="key-entry-submit" value="done">
+      <p id="crypt-button-text">encrypt</p>
+    </div>
+    <div id="crypt" class="crypt dropbox"><p class="prompt">drop encrypted files or click</p></div>
+    <input type="file" id="hidden-input" multiple="true">
+    <script src="blowfish.js" type="application/javascript"></script>
+    <script src="blowfish-wrapper.js" type="application/javascript"></script>
+    <script src="Box.js"></script>
+    <script src="KeyEntry.js"></script>
+    <script src="enkidu.js" type="application/javascript"></script>
+  </body>
+</html>

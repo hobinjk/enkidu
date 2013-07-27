@@ -1,0 +1,125 @@
+body {
+  font-family: 'Codystar', sans;
+}
+a {
+  color: black;
+}
+a:hover {
+  color: blue;
+}
+
+.darkened {
+  background: #333;
+}
+
+#hidden-input {
+  display: none;
+}
+
+.dropbox {
+  width: 20em;
+  height: 20em;
+  position: absolute;
+  top: 50%;
+  margin-top: -10em;
+  text-align: center;
+  transition: all 1.5s, background 0s;
+
+  z-index: -10;
+}
+
+.prompt {
+  line-height: 280px;
+}
+
+.plain {
+  background: #a4ff00;
+  left: 2em;
+}
+.plain:hover, .plain-drag-over { /* so much for moz-drag-over */
+  background: #d4ff55;
+}
+.crypt {
+  background: #00a4ff;
+  right: 2em;
+}
+.crypt:hover, .crypt-drag-over {
+  background: #55d4ff;
+}
+
+.file-list {
+  list-style-type: none;
+  text-align: center;
+  position: relative;
+  top: 50%;
+  transition: margin-top: 0.75s;
+  padding-left: 0px;
+}
+
+#center-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transition: all 1.5s;
+}
+
+.crypt-button {
+  background: hsl(180, 100%, 60%);
+  width: 8em;
+  height: 8em;
+  margin-left: -4em;
+  margin-top: -4em;
+  line-height: 8em;
+  text-align: center;
+}
+
+.key-entry {
+  width: 14em;
+  height: 3em;
+  background: #00d4d4;
+  margin-top: -1.5em;
+  margin-left: -7em;
+}
+
+#key-entry-submit {
+  width: 100%;
+  height: 50%;
+  border: none;
+  margin: 0px;
+  padding-top: 0.4em;
+  /* padding-right: 1px; */
+  font-family: 'Codystar', cursive;
+  background: hsl(180, 0%, 60%);
+  -moz-box-sizing: border-box;
+   box-sizing: border-box;
+   vertical-align: middle;
+}
+
+#key-entry-input {
+  width: 100%;
+  height: 50%;
+  text-align: center;
+  border: 1px solid hsl(180, 0%, 42%);
+  margin: 0px;
+  font-family: 'Codystar', cursive;
+  -moz-box-sizing: border-box;
+   box-sizing: border-box;
+}
+
+#crypt-button-text {
+  display: none;
+  opacity: 0;
+  transition: opacity 0.75s;
+  position: absolute;
+  width: 8em;
+  height: 8em;
+  margin-left: -4em;
+  margin-top: -4em;
+  top: 50%;
+  left: 50%;
+
+}
+
+.crypt-button:hover {
+  background: hsl(180, 100%, 80%);
+}

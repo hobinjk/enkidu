@@ -1,0 +1,26 @@
+@media screen and (max-width: 60em) {
+.dropbox {
+  left: 50%;
+  margin-left: -10em;
+  margin-top: 0;
+}
+
+.plain {
+  top: 2em;
+  margin-top: 0;
+}
+
+#center-container {
+  left: 50%;
+  top: 27em;
+}
+
+#crypt-button-text {
+  left: 50%;
+  top: 27em;
+}
+
+.crypt {
+  top: 32em;
+}
+}
