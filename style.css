@@ -52,7 +52,6 @@ a:hover {
   text-align: center;
   position: relative;
   top: 50%;
-  transition: margin-top 0.75s;
   padding-left: 0px;
 }
 

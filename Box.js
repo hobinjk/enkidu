@@ -32,6 +32,7 @@ Box.prototype.onDragLeave = function(self) {
 Box.prototype.onDrop = function(self) {
   return function(e) {
     Box.stop(e);
+    self.elem.classList.remove(this.id+"-drag-over");
     self.files = e.dataTransfer.files;
     console.log(e);
     if(!self.files) return;
