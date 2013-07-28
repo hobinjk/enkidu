@@ -25,7 +25,14 @@ function KeyEntry(prefix) {
     this.submit.style.display = "none";
     this.input.removeEventListener("keypress", this._inputKeypressListener, false);
     this.submit.removeEventListener("click", this._submitClickListener, false);
-
   };
+  this.show = function() {
+    this.input.value = "";
+    this.input.style.display = "inline";
+    this.submit.style.display = "inline";
+    this.input.addEventListener("keypress", this._inputKeypressListener, false);
+    this.submit.addEventListener("click", this._submitClickListener, false);
+  };
+
 }
 
