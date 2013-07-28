@@ -71,7 +71,7 @@ function onCryptClick() {
           var bfWorker = new Worker("blowfish-worker.js");
           bfWorker.onmessage = function(wEvent) {
             var data = wEvent.data;
-            createLink(fileList, file.name, encrypt, outBuffer);
+            createLink(fileList, file.name, encrypt, data.output);
           };
           bfWorker.postMessage({key: key, input: arrayBuffer, encrypt: encrypt});
         } else {
