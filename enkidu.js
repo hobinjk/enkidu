@@ -18,7 +18,13 @@ keyEntry.onSubmit = function onKeyEntrySubmit() {
   centerContainer.classList.remove("key-entry");
   centerContainer.classList.add("crypt-button");
 
-  centerContainer.addEventListener("click", onCryptClick, false);
+  setTimeout(
+    function() {
+      centerContainer.addEventListener("click", onCryptClick, false);
+    },
+    0
+  );
+
 };
 
 function onCryptClick() {

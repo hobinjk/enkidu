@@ -24,6 +24,7 @@ a:hover {
   margin-top: -10em;
   text-align: center;
   transition: all 1.5s, background 0s;
+  cursor: pointer;
 
   z-index: -10;
 }
@@ -70,6 +71,7 @@ a:hover {
   margin-top: -4em;
   line-height: 8em;
   text-align: center;
+  cursor: pointer;
 }
 
 .key-entry {
