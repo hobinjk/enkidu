@@ -73,7 +73,7 @@ function onCryptClick() {
             var data = wEvent.data;
             createLink(fileList, file.name, encrypt, data.output);
           };
-          bfWorker.postMessage({key: key, input: arrayBuffer, encrypt: encrypt});
+          bfWorker.postMessage({key: key, input: arrayBuffer, crypt: encrypt});
         } else {
           var outBuffer = Blowfish.crypt(key, arrayBuffer, encrypt);
           createLink(fileList, file.name, encrypt, outBuffer);
